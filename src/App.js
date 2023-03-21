@@ -9,6 +9,7 @@ import EventBider from './Componets/EventBinder';
 import NameList from './Componets/NameList';
 import Form from './Componets/Form';
 import LifeCycleA from './Componets/LifeCycleA';
+import FragmentDemo from './Componets/FragmentDemo'
 
 class App extends React.Component {
   state = {
@@ -61,6 +62,8 @@ class App extends React.Component {
     const { characters } = this.state;
     return (
       <div className="Container">
+        {/*<Head />*/}
+        <FragmentDemo />
         <LifeCycleA />
         <Form />
         <NameList />
@@ -72,7 +75,7 @@ class App extends React.Component {
           characterData={characters}
           removeCharacter={this.removeCharacter}
         />
-        <Head />
+        
       </div>
     );
   }
